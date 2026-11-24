@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample | เข้าสู่ระบบ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontend.css">
+</head>
+<body>
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <main class="login-card">
+        <div class="brand">
+            <h1>Sample</h1>
+            <p class="subtitle">ลงชื่อเข้าใช้เพื่อดำเนินการต่อ</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+            <div class="field">
+                <label for="username">Username</label>
+                <div class="input-wrap">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5Z"/>
+                    </svg>
+                    <input type="text" id="username" name="username" placeholder="กรอกชื่อผู้ใช้" autocomplete="username" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="password">Password</label>
+                <div class="input-wrap">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M17 9V7a5 5 0 0 0-10 0v2H5v12h14V9h-2Zm-8-2a3 3 0 0 1 6 0v2H9V7Zm3 10a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/>
+                    </svg>
+                    <input type="password" id="password" name="password" placeholder="กรอกรหัสผ่าน" autocomplete="current-password" required>
+                    <button type="button" class="toggle-pass" id="togglePass" aria-label="แสดงรหัสผ่าน">แสดง</button>
+                </div>
+            </div>
+
+            <p class="error-msg" id="errorMsg" role="alert"></p>
+
+            <button type="submit" class="btn-login">เข้าสู่ระบบ</button>
+        </form>
+    </main>
+
+    <footer class="contact-note">
+        หากลืม Username หรือ Password กรุณาติดต่อแอดมิน
+    </footer>
+
+    <script src="fontend.js"></script>
+</body>
+</html>
